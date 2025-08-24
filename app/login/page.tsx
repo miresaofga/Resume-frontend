@@ -32,7 +32,7 @@ export default function Login() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-sm space-y-4 border border-gray-300">
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-sm space-y-4 border border-gray-300 login-box-fix">
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input

@@ -49,6 +49,15 @@
 }
 @import "tailwindcss";
 
+/* Fix for mobile Safari: force background and border for login box */
+.login-box-fix {
+  background: #fff !important;
+  border: 1px solid #d1d5db !important; /* Tailwind gray-300 */
+  min-width: 280px;
+  min-height: 320px;
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
