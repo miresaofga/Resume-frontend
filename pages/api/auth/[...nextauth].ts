@@ -1,7 +1,12 @@
 
 
+import NextAuth from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import FacebookProvider from "next-auth/providers/facebook";
+import LinkedInProvider from "next-auth/providers/linkedin";
 import type { SessionStrategy } from "next-auth";
 
+export default NextAuth({
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID || "",
@@ -22,6 +27,4 @@ import type { SessionStrategy } from "next-auth";
   pages: {
     signIn: "/login",
   },
-};
-
-export default NextAuth(authOptions);
+});
