@@ -22,7 +22,7 @@ export default NextAuth({
     }),
   ],
   session: {
-    strategy: "jwt" as SessionStrategy,
+    strategy: "jwt",
   },
   pages: {
     signIn: "/login",
